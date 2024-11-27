@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Portrait with Fireworks</title>
+    <style>
+        /* General styles */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #262626;
+            overflow: hidden;
+            position: relative;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 8px;
+            background: url("your-image.jpg");
+            background-repeat: no-repeat;
+            background-size: 600px 600px;
+            background-position: center;
+            -webkit-background-clip: text;
+            background-attachment: fixed;
+            -webkit-text-fill-color: rgba(255, 255, 255, 0);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Light spread effect */
+        .light {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fadeOut 0.6s ease-out forwards;
+        }
+
+        /* Firework particles */
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: radial-gradient(circle, rgba(255, 255, 0, 1), rgba(255, 0, 0, 0.6));
+            border-radius: 50%;
+            pointer-events: none;
+            animation: explode 1s ease-out forwards;
+        }
+
+        /* Animations */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(3);
+            }
+        }
+
+        @keyframes explode {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--x), var(--y)) scale(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        Happy Birthday Happy Birthday Happy Birthday Happy Birthday Happy BirthdayHappy Birthday Happy Birthday Happy Birthday Happy Birthday Happy Birthday<br>
+        <!-- Add your repeated text here -->
+    </p>
+
+    <script>
+        // Event listener for clicks
+        document.addEventListener("click", (e) => {
+            // Create and position the light spread effect
+            const light = document.createElement("div");
+            light.classList.add("light");
+            light.style.top = `${e.clientY - 75}px`; // Offset to center the circle
+            light.style.left = `${e.clientX - 75}px`;
+            document.body.appendChild(light);
+
+            // Remove the light effect after animation
+            light.addEventListener("animationend", () => {
+                light.remove();
+            });
+
+            // Create firework particles
+            const numParticles = 25; // Number of particles per firework
+            for (let i = 0; i < numParticles; i++) {
+                const particle = document.createElement("div");
+                particle.classList.add("particle");
+
+                // Random angle and distance for the explosion
+                const angle = Math.random() * 2 * Math.PI; // Random angle in radians
+              const distance = Math.random() * 100 + 50; // Random distance (50px to 150px)
+                const x = Math.cos(angle) * distance; // X offset
+                const y = Math.sin(angle) * distance; // Y offset
+
+                // Set custom properties for particle animation
+                particle.style.setProperty("--x", `${x}px`);
+                particle.style.setProperty("--y", `${y}px`);
+
+                // Position the particle at the click location
+                particle.style.left = `${e.clientX}px`;
+                particle.style.top = `${e.clientY}px`;
+
+                // Add particle to the document
+                document.body.appendChild(particle);
+
+                // Remove particle after animation
+                particle.addEventListener("animationend", () => {
+                    particle.remove();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
